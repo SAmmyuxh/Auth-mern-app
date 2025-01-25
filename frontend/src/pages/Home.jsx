@@ -26,7 +26,7 @@ function Home() {
         'Authorization':localStorage.getItem("token")
       }
     }
-    const url = "http://localhost:8080/products"
+    const url = "https://auth-mern-app-api-ashy.vercel.app/products"
     const response = await fetch(url,headers)
     const result = await response.json();
      setproducts(result)
