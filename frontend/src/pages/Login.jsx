@@ -24,7 +24,7 @@ function Login() {
      return handleerror(" email and password are required")
    }
    try {
-     const url = "http://localhost:8080/auth/login"
+     const url = "https://auth-mern-app-api-ashy.vercel.app/auth/login"
      const response = await fetch(url,
        {
          method:"POST",
